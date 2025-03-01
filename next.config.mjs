@@ -16,10 +16,16 @@ const nextConfig = {
 };
 
 export default function config() {
-    try {
-        return withNextIntl(withMDX(nextConfig));
-    } catch (error) {
-        console.error('Error in Next.js config:', error);
-        throw new Error(error instanceof Error ? error.message : String(error));
+  try {
+    return withNextIntl(withMDX(nextConfig));
+  } catch (error) {
+    console.error('Error in Next.js config:', error);
+
+    // Ensure error is properly wrapped as an instance of Error
+    if (!(error instanceof Error)) {
+      console.log('error ', error);
+      throw new Error(String(error));
     }
+    throw error;
+  }
 }
