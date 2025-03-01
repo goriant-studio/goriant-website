@@ -29,6 +29,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug Errors
+        run: |
+              set -x
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
