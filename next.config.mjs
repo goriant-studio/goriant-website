@@ -1,31 +1,24 @@
-import mdx from '@next/mdx';
+// Import the MDX plugin
+import createMDX from '@next/mdx';
+
+// Import the next-intl plugin
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withMDX = mdx({
-    extension: /\.mdx?$/,
-    options: {},
+// Initialize the next-intl plugin with the path to your i18n configuration
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+
+// Initialize the MDX plugin
+const withMDX = createMDX({
+  // You can add remark and rehype plugins here if needed
+  extension: /\.mdx?$/
 });
 
-const withNextIntl = createNextIntlPlugin();
-
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-    pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  // Include MDX and MD files in the page extensions
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  // Add any other Next.js configurations here
 };
 
-export default function config() {
-  try {
-    return withNextIntl(withMDX(nextConfig));
-  } catch (error) {
-    console.error('Error in Next.js config:', error);
-
-    // Ensure error is properly wrapped as an instance of Error
-    if (!(error instanceof Error)) {
-      console.log('error ', error);
-      throw new Error(String(error));
-    }
-    throw error;
-  }
-}
+// Combine the plugins with the Next.js configuration
+export default withNextIntl(withMDX(nextConfig));
