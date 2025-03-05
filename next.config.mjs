@@ -13,7 +13,7 @@ export default (phase) => {
       unoptimized: true,
     },
     basePath: "",
-    assetPrefix: isDev ? undefined : "https://cdn.mydomain.com",
+    assetPrefix: isDev ? undefined : "https://goriant.com",
     trailingSlash: true,
     // Cấu hình compiler để loại bỏ server-only code
     compiler: {
