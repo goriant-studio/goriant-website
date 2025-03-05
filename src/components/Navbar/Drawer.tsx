@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Link from "next/link";
+import { getAssetPath } from "@/utils/constants";
 
 
 interface DrawerProps {
@@ -33,7 +34,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                         <div className="flex flex-shrink-0 items-center">
                             <img
                                 className="block h-10 lg:hidden"
-                                src={'/images/Logo/logo.svg'}
+                                src={getAssetPath('/images/Logo/logo.svg')}
                                 alt="Crypto-Logo"
                             />
                         </div>

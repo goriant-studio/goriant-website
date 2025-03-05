@@ -4,6 +4,7 @@ import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
+import { getAssetPath } from '@/utils/constants';
 // import Contactusform from './Contactus';
 
 interface NavigationItem {
@@ -39,12 +40,12 @@ const Navbar = () => {
                             <div className="flex flex-shrink-0 items-center">
                                 <img
                                     className="block h-10 w-20px lg:hidden"
-                                    src={'/images/Logo/logo.svg'}
+                                    src={getAssetPath('/images/Logo/logo.svg')}
                                     alt="Crypto-Logo"
                                 />
                                 <img
                                     className="hidden h-48px w-48px lg:block"
-                                    src={'/images/Logo/logo.svg'}
+                                    src={getAssetPath('/images/Logo/logo.svg')}
                                     alt="Crypto-Logo"
                                 />
                             </div>

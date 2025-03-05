@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getAssetPath } from '@/utils/constants';
 
 interface table {
     index: number;
@@ -70,7 +71,9 @@ const Table = () => {
                             {tableData.map((items, i) => (
                                 <tr key={i} className="border-b border-b-darkblue">
                                     <td className="px-4 py-6 text-center text-white">{items.index}</td>
-                                    <td className="px-4 py-6 text-center text-white flex items-center justify-start gap-5 "><Image src={items.imgSrc} alt={items.imgSrc} height={50} width={50} />{items.name}</td>
+                                    <td className="px-4 py-6 text-center text-white flex items-center justify-start gap-5 ">
+                                        <Image src={getAssetPath(items.imgSrc)} alt={items.imgSrc} height={50} width={50} />{items.name}
+                                    </td>
                                     <td className="px-4 py-6 text-center text-white">${items.price.toLocaleString()}</td>
                                     <td className={`px-4 py-6 text-center ${items.change < 0 ? 'text-red' : 'text-green'} `}>{items.change}%</td>
                                     <td className="px-4 py-6 text-center text-white">${items.cap.toLocaleString()}</td>
@@ -83,7 +86,7 @@ const Table = () => {
                     </table>
                 </div>
             </div>
-            <Image src={'/images/Table/Untitled.svg'} alt="ellipse" width={2460} height={102} className="md:mb-40 md:-mt-6" />
+            <Image src={getAssetPath('/images/Table/Untitled.svg')} alt="ellipse" width={2460} height={102} className="md:mb-40 md:-mt-6" />
         </>
     )
 }

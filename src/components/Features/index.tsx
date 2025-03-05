@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getAssetPath } from '@/utils/constants';
 
 
 interface featuresdata {
@@ -42,7 +43,7 @@ const Features = () => {
                         {featuresdata.map((items, i) => (
                             <div className="bg-gray-800 py-10 pr-12 pl-6 rounded-lg" key={i}>
                                 <div className="rounded-full gg h-16 w-16 flex items-center justify-center mb-10">
-                                    <Image src={items.imgSrc} alt={items.imgSrc} width={24} height={30} />
+                                    <Image src={getAssetPath(items.imgSrc)} alt={items.imgSrc} width={24} height={30} />
                                 </div>
                                 <h5 className="text-white text-lg font-medium mb-4">{items.heading}</h5>
                                 <p className="text-gray-300 text-sm font-normal">{items.subheading}</p>

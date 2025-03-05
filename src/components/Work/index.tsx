@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image';
+import { getAssetPath } from '@/utils/constants';
 
 interface workdata {
     imgSrc: string;
@@ -44,7 +45,7 @@ const Work = () => {
                     {workdata.map((items, i) => (
                         <div className='relative pt-12 p-8 bg-gray-800 rounded-xl' key={i}>
                             <div className='bg-gradient-to-r from-purple-600 to-blue-500 rounded-full flex justify-center items-center absolute p-4 w-16 h-16 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                                <Image src={items.imgSrc} alt={items.imgSrc} width={32} height={32} className="w-8 h-8" />
+                                <Image src={getAssetPath(items.imgSrc)} alt={items.imgSrc} width={32} height={32} className="w-8 h-8" />
                             </div>
                             <div className="mt-4">
                                 <h3 className='text-2xl text-white font-semibold text-center mt-4'>{items.heading}</h3>

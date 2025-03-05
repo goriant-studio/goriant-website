@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getAssetPath } from '@/utils/constants';
 
 const Banner = () => {
     const [isOpen, setOpen] = useState(false);
@@ -30,14 +31,14 @@ const Banner = () => {
                                     {t('banner.playNow')}
                                 </button>
                                 <button className='bg-transparent flex justify-center items-center text-white hover:text-gray-200 transition-colors duration-300' onClick={() => setOpen(true)}>
-                                    <Image src={'/images/Banner/playbutton.svg'} alt="watch-gameplay" className='mr-3' width={47} height={47} />
+                                    <Image src={getAssetPath('/images/Banner/playbutton.svg')} alt="watch-gameplay" className='mr-3' width={47} height={47} />
                                     {t('banner.watchGameplay')}
                                 </button>
                             </div>
                         </div>
 
                         <div className='col-span-5 mt-10 lg:mt-0'>
-                            <Image src="/images/banner/banner.png" alt="banner-image" width={1000} height={805} />
+                            <Image src={getAssetPath('/images/banner/banner.png')} alt="banner-image" width={1000} height={805} />
                         </div>
                     </div>
                 </div>

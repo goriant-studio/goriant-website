@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getAssetPath } from '@/utils/constants';
 
 const EvolutionSystem = () => {
   const { t } = useLanguage();
@@ -15,7 +16,7 @@ const EvolutionSystem = () => {
           {/* Cánh chim */}
           <div className="bg-gray-800 rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300">
             <div className="rounded-lg overflow-hidden mb-6 h-48">
-              <img src="/images/features/bird-wings.jpg" alt={t('evolution.birdWings.title')} className="w-full h-full object-cover" />
+              <img src={getAssetPath("/images/features/bird-wings.jpg")} alt={t('evolution.birdWings.title')} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3">{t('evolution.birdWings.title')}</h3>
             <p className="text-gray-300 mb-4">{t('evolution.birdWings.description')}</p>
@@ -28,7 +29,7 @@ const EvolutionSystem = () => {
           {/* Cánh robot */}
           <div className="bg-gray-800 rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300">
             <div className="rounded-lg overflow-hidden mb-6 h-48">
-              <img src="/images/features/robot-wings.jpg" alt={t('evolution.robotWings.title')} className="w-full h-full object-cover" />
+              <img src={getAssetPath("/images/features/robot-wings.jpg")} alt={t('evolution.robotWings.title')} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3">{t('evolution.robotWings.title')}</h3>
             <p className="text-gray-300 mb-4">{t('evolution.robotWings.description')}</p>
@@ -41,7 +42,7 @@ const EvolutionSystem = () => {
           {/* Cánh phép thuật */}
           <div className="bg-gray-800 rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300">
             <div className="rounded-lg overflow-hidden mb-6 h-48">
-              <img src="/images/features/magic-wings.jpg" alt={t('evolution.magicWings.title')} className="w-full h-full object-cover" />
+              <img src={getAssetPath("/images/features/magic-wings.jpg")} alt={t('evolution.magicWings.title')} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold text-white mb-3">{t('evolution.magicWings.title')}</h3>
             <p className="text-gray-300 mb-4">{t('evolution.magicWings.description')}</p>
@@ -56,11 +57,11 @@ const EvolutionSystem = () => {
           <p className="text-xl text-gray-300 mb-6">{t('evolution.combination')}</p>
           <div className="bg-gray-800 rounded-xl p-6 shadow-lg inline-block">
             <div className="flex items-center space-x-6">
-              <img src="/images/features/wing-combine-1.jpg" alt={t('evolution.combine.alt1')} className="w-20 h-20 rounded-full object-cover" />
+              <img src={getAssetPath("/images/features/wing-combine-1.jpg")} alt={t('evolution.combine.alt1')} className="w-20 h-20 rounded-full object-cover" />
               <span className="text-2xl text-purple-500">+</span>
-              <img src="/images/features/wing-combine-2.jpg" alt={t('evolution.combine.alt2')} className="w-20 h-20 rounded-full object-cover" />
+              <img src={getAssetPath("/images/features/wing-combine-2.jpg")} alt={t('evolution.combine.alt2')} className="w-20 h-20 rounded-full object-cover" />
               <span className="text-2xl text-purple-500">=</span>
-              <img src="/images/features/wing-special.jpg" alt={t('evolution.combine.alt3')} className="w-24 h-24 rounded-full object-cover border-2 border-yellow-400" />
+              <img src={getAssetPath("/images/features/wing-special.jpg")} alt={t('evolution.combine.alt3')} className="w-24 h-24 rounded-full object-cover border-2 border-yellow-400" />
             </div>
           </div>
         </div>
