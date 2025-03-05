@@ -1,0 +1,21 @@
+{
+  "title": "Câu Hỏi Thường Gặp",
+  "questions": [
+    {
+      "q": "Flappy Evolution là gì?",
+      "a": "Flappy Evolution là một trò chơi sáng tạo kết hợp lối chơi cổ điển của Flappy Bird với cơ chế tiến hóa, cho phép người chơi phát triển chim của họ với các loại cánh và khả năng khác nhau."
+    },
+    {
+      "q": "Hệ thống tiến hóa hoạt động như thế nào?",
+      "a": "Người chơi có thể thu thập điểm tiến hóa trong quá trình chơi để mở khóa và kết hợp các loại cánh khác nhau (Cánh Chim, Cánh Robot, Cánh Phép Thuật), mỗi loại mang đến những khả năng và lợi thế chơi game độc đáo."
+    },
+    {
+      "q": "Game có miễn phí không?",
+      "a": "Có, game hoàn toàn miễn phí với tùy chọn mua trong game cho các vật phẩm trang trí và kết hợp cánh đặc biệt."
+    },
+    {
+      "q": "Tôi có thể tải game ở đâu?",
+      "a": "Game sẽ có mặt trên Google Play Store cho thiết bị Android và có thể chơi trực tiếp trên trình duyệt web."
+    }
+  ]
+} 

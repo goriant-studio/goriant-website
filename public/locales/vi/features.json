@@ -1,0 +1,21 @@
+{
+  "title": "Tính Năng Game",
+  "sections": {
+    "evolution": {
+      "title": "Hệ Thống Tiến Hóa",
+      "description": "Phát triển chim của bạn với các loại cánh và kết hợp khác nhau để có được những khả năng và lối chơi độc đáo."
+    },
+    "gameplay": {
+      "title": "Lối Chơi Nâng Cao",
+      "description": "Cơ chế Flappy Bird cổ điển được nâng cấp với các tính năng hiện đại, power-up và khả năng đặc biệt."
+    },
+    "progression": {
+      "title": "Hệ Thống Phát Triển",
+      "description": "Mở khóa các loại cánh mới, thu thập điểm tiến hóa và khám phá những kết hợp hiếm khi bạn tiến bộ."
+    },
+    "multiplayer": {
+      "title": "Tính Năng Nhiều Người Chơi",
+      "description": "Thi đấu với bạn bè, tham gia giải đấu và leo bảng xếp hạng toàn cầu."
+    }
+  }
+} 

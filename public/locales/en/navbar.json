@@ -1,0 +1,13 @@
+{
+  "menu": {
+    "home": "Home",
+    "features": "Features",
+    "evolution": "Evolution",
+    "exchange": "Exchange",
+    "faq": "FAQ"
+  },
+  "buttons": {
+    "download": "Download Game",
+    "play": "Play Now"
+  }
+} 

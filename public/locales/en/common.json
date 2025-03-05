@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "gameplay": "Gameplay",
+    "download": "Download"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "language": {
+    "en": "English",
+    "vi": "Vietnamese"
+  },
+  "buttons": {
+    "upgrade": "Upgrade",
+    "learnMore": "Learn More",
+    "download": "Download Now"
+  }
+} 

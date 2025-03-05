@@ -1,0 +1,21 @@
+{
+  "title": "Game Features",
+  "sections": {
+    "evolution": {
+      "title": "Evolution System",
+      "description": "Evolve your bird with different wing types and combinations for unique abilities and gameplay styles."
+    },
+    "gameplay": {
+      "title": "Enhanced Gameplay",
+      "description": "Classic Flappy Bird mechanics enhanced with modern features, power-ups, and special abilities."
+    },
+    "progression": {
+      "title": "Progression System",
+      "description": "Unlock new wing types, collect evolution points, and discover rare combinations as you progress."
+    },
+    "multiplayer": {
+      "title": "Multiplayer Features",
+      "description": "Compete with friends, join tournaments, and climb the global leaderboards."
+    }
+  }
+} 

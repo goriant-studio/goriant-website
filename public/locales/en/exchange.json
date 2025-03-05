@@ -1,0 +1,21 @@
+{
+  "title": "In-Game Exchange",
+  "sections": {
+    "currency": {
+      "title": "Game Currency",
+      "description": "Exchange real money for in-game currency to purchase special items and upgrades."
+    },
+    "items": {
+      "title": "Special Items",
+      "description": "Browse and purchase unique wing combinations, power-ups, and cosmetic items."
+    },
+    "bundles": {
+      "title": "Special Bundles",
+      "description": "Get more value with our carefully curated bundles of wings and power-ups."
+    },
+    "vip": {
+      "title": "VIP Membership",
+      "description": "Unlock exclusive benefits, daily rewards, and special discounts with VIP status."
+    }
+  }
+} 

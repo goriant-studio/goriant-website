@@ -1,0 +1,21 @@
+{
+  "title": "Frequently Asked Questions",
+  "questions": [
+    {
+      "q": "What is Flappy Evolution?",
+      "a": "Flappy Evolution is an innovative game that combines classic Flappy Bird gameplay with evolution mechanics, allowing players to evolve their bird with different wing types and abilities."
+    },
+    {
+      "q": "How does the evolution system work?",
+      "a": "Players can collect evolution points during gameplay to unlock and combine different wing types (Bird, Robot, Magic), each offering unique abilities and gameplay advantages."
+    },
+    {
+      "q": "Is the game free to play?",
+      "a": "Yes, the game is free to play with optional in-game purchases for cosmetic items and special wing combinations."
+    },
+    {
+      "q": "Where can I download the game?",
+      "a": "The game will be available on Google Play Store for Android devices and as a web browser game."
+    }
+  ]
+} 

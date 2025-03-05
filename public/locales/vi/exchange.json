@@ -1,0 +1,21 @@
+{
+  "title": "Cửa Hàng Game",
+  "sections": {
+    "currency": {
+      "title": "Tiền Tệ Game",
+      "description": "Đổi tiền thật lấy tiền trong game để mua các vật phẩm đặc biệt và nâng cấp."
+    },
+    "items": {
+      "title": "Vật Phẩm Đặc Biệt",
+      "description": "Duyệt và mua các kết hợp cánh độc đáo, power-up và vật phẩm trang trí."
+    },
+    "bundles": {
+      "title": "Gói Ưu Đãi",
+      "description": "Nhận giá trị tốt hơn với các gói cánh và power-up được tuyển chọn cẩn thận."
+    },
+    "vip": {
+      "title": "Thành Viên VIP",
+      "description": "Mở khóa các đặc quyền độc quyền, phần thưởng hàng ngày và giảm giá đặc biệt với tư cách VIP."
+    }
+  }
+} 
