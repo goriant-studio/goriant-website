@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getAssetPath } from '@/utils/constants';
+
 interface faqdata {
     heading: string;
     subheading: string;
@@ -66,7 +68,7 @@ const Faq = () => {
 
                     {/* Column-2 */}
                     <div className="mt-32">
-                        <Image src={'/images/Faq/faq.svg'} alt="faq-image" width={941} height={379} />
+                        <Image src={getAssetPath('/images/Faq/faq.svg')} alt="faq-image" width={941} height={379} />
                     </div>
 
                 </div>

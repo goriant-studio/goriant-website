@@ -1,4 +1,5 @@
 "use client"
+import { getAssetPath } from "@/utils/constants";
 import React, { Component } from "react";
 import Slider from "react-slick";
 
@@ -91,7 +92,7 @@ export default class GamePartners extends Component {
                                     <div className="
                                     h-[120px] p-4 rounded-lg mx-2 shadow-sm flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 
                                     bg-gradient-to-b from-sky-400 to-sky-200">
-                                        <img src={item.imgSrc} alt={item.altText} className="max-h-[80px] w-auto" />
+                                        <img src={getAssetPath(item.imgSrc)} alt={item.altText} className="max-h-[80px] w-auto" />
                                     </div>
                                 </div>
                             )}
