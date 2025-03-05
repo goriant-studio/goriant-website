@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "features": "Tính năng",
+    "gameplay": "Lối chơi",
+    "download": "Tải xuống"
+  },
+  "footer": {
+    "rights": "Tất cả quyền được bảo lưu",
+    "contact": "Liên hệ",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản sử dụng"
+  },
+  "language": {
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt"
+  },
+  "buttons": {
+    "upgrade": "Nâng cấp",
+    "learnMore": "Tìm hiểu thêm",
+    "download": "Tải ngay"
+  }
+} 
