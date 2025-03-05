@@ -9,12 +9,11 @@ const translations = {
       connectWallet: "Connect Wallet",
     },
     banner: {
-      title: "Cr Crypto Exchange",
-      subtitle: "Fast and Secure Crypto Trading",
-      description:
-        "Trade cryptocurrencies with confidence on our secure platform",
-      startTrading: "Start Trading",
-      learnMore: "Learn More",
+      title: "Flap & Evolve",
+      subtitle: "A New Adventure",
+      description: "Discover a unique adventure with our new indie game! Evolve, upgrade, and fly higher than ever before. Play now on web or Android!",
+      playNow: "Play Now",
+      watchGameplay: "Watch Gameplay"
     },
     evolution: {
       title: "Evolution System",
@@ -87,6 +86,7 @@ const translations = {
     description: "Đây là một trang web tĩnh được xây dựng với Next.js",
     switch: "Chuyển sang tiếng Anh",
     link: "/en",
+
     nav: {
       home: "Trang Chủ",
       exchange: "Sàn Giao Dịch",
@@ -94,14 +94,15 @@ const translations = {
       faq: "Hỏi Đáp",
       connectWallet: "Kết Nối Ví",
     },
+
     banner: {
-      title: "Sàn Giao Dịch Cr Crypto",
-      subtitle: "Giao Dịch Tiền Mã Hóa Nhanh Chóng và An Toàn",
-      description:
-        "Giao dịch tiền mã hóa một cách tự tin trên nền tảng an toàn của chúng tôi",
-      startTrading: "Bắt Đầu Giao Dịch",
-      learnMore: "Tìm Hiểu Thêm",
+      title: "Flap & Evolve",
+      subtitle: "Cuộc Phiêu Lưu Mới",
+      description: "Khám phá cuộc phiêu lưu độc đáo với game indie mới!\nTiến hóa, nâng cấp và bay cao hơn bao giờ hết.\nChơi ngay trên web hoặc Android!",
+      playNow: "Chơi Ngay",
+      watchGameplay: "Xem Gameplay"
     },
+
     evolution: {
       title: "Hệ Thống Tiến Hóa",
       birdWings: {
@@ -129,6 +130,7 @@ const translations = {
         alt3: "Cánh đặc biệt",
       },
     },
+
     features: {
       title: "Tính Năng Sàn Giao Dịch",
       security: {
@@ -165,6 +167,7 @@ const translations = {
         a: "Game sẽ có mặt trên Google Play Store cho thiết bị Android và có thể chơi trực tiếp trên trình duyệt web."
       }
     ]
+    
   },
 };
 
