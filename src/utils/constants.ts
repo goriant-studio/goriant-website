@@ -3,7 +3,7 @@ const basePath = process.env.NODE_ENV === "development" ? "" : 'https://goriant.
 
 export const getAssetPath = (path: string) => {
   if (path.startsWith("/")) {
-    return `${basePath}${path}`;
+    return `${basePath}${path.toLowerCase()}`;
   }
   return path;
 };

@@ -68,7 +68,7 @@ const Faq = () => {
 
                     {/* Column-2 */}
                     <div className="mt-32">
-                        <Image src={getAssetPath('/images/Faq/faq.svg')} alt="faq-image" width={941} height={379} />
+                        <Image src={getAssetPath('/images/faq/faq.svg')} alt="faq-image" width={941} height={379} />
                     </div>
 
                 </div>
