@@ -2,10 +2,11 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
-
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Banner = () => {
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false);
+    const { t } = useLanguage();
 
     return (
         <div className='bg-image relative' id="home-section">
@@ -19,27 +20,24 @@ const Banner = () => {
                         <div className='arrowTwo'></div>
                         <div className='col-span-7'>
                             <h1 className="text-4xl lg:text-7xl font-bold mb-5 text-white md:4px md:text-start text-center">
-                                Flap & Evolve: <br /> A New Adventure
+                                {t('banner.title')} <br /> {t('banner.subtitle')}
                             </h1>
-                            <p className='text-white md:text-lg font-normal mb-10 md:text-start text-center'>
-                              Khám phá cuộc phiêu lưu độc đáo với game indie mới! <br /> 
-                              Tiến hóa, nâng cấp và bay cao hơn bao giờ hết. <br />
-                              Chơi ngay trên web hoặc Android!</p>
+                            <p className='text-white md:text-lg font-normal mb-10 md:text-start text-center whitespace-pre-line'>
+                                {t('banner.description')}
+                            </p>
                             <div className='flex align-middle justify-center md:justify-start'>
-                                <button className='text-xl font-semibold text-white py-4 px-6 lg:px-12 game-button mr-6'>Chơi Ngay</button>
-                                <button onClick={() => setOpen(true)} className='bg-transparent flex justify-center items-center text-white hover:text-gray-200 transition-colors duration-300'>
-                                  <Image src={'/images/Banner/playbutton.svg'} alt="xem-trailer" className='mr-3' width={47} height={47} />Xem Gameplay</button>
+                                <button className='game-button mr-4'>
+                                    {t('banner.playNow')}
+                                </button>
+                                <button className='bg-transparent flex justify-center items-center text-white hover:text-gray-200 transition-colors duration-300' onClick={() => setOpen(true)}>
+                                    <Image src={'/images/Banner/playbutton.svg'} alt="watch-gameplay" className='mr-3' width={47} height={47} />
+                                    {t('banner.watchGameplay')}
+                                </button>
                             </div>
                         </div>
 
-                        <div className='col-span-5 lg:-m-48'>
-                            <div className='arrowThree'></div>
-                            <div className='arrowFour'></div>
-                            <div className='arrowFive'></div>
-                            <Image src={'/images/Banner/banner.png'} alt="game-hero" width={1013} height={760} />
-                            <div className='arrowSix'></div>
-                            <div className='arrowSeven'></div>
-                            <div className='arrowEight'></div>
+                        <div className='col-span-5 mt-10 lg:mt-0'>
+                            <Image src="/images/banner/banner.png" alt="banner-image" width={1000} height={805} />
                         </div>
                     </div>
                 </div>
