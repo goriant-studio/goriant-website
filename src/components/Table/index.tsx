@@ -15,7 +15,7 @@ const tableData: table[] = [
     {
         index: 1,
         name: "Bitcoin(BTC)",
-        imgSrc: '/images/Table/bitcoin.svg',
+        imgSrc: '/images/table/btc.svg',
         price: 16458.23,
         change: 3.96,
         cap: 16828.25,
@@ -24,7 +24,7 @@ const tableData: table[] = [
     {
         index: 2,
         name: "Ethereum(ETH)",
-        imgSrc: '/images/Table/cryptoone.svg',
+        imgSrc: '/images/table/eth.svg',
         price: 16458.23,
         change: 3.96,
         cap: 16828.80,
@@ -33,7 +33,7 @@ const tableData: table[] = [
     {
         index: 3,
         name: "Tether(USDT)",
-        imgSrc: '/images/Table/cryptothree.svg',
+        imgSrc: '/images/table/usdt.svg',
         price: 16458.23,
         change: -3.96,
         cap: 16828.30,
@@ -42,7 +42,7 @@ const tableData: table[] = [
     {
         index: 4,
         name: "Binance Coin(BNB)",
-        imgSrc: '/images/Table/cryptotwo.svg',
+        imgSrc: '/images/table/bnb.svg',
         price: 16458.23,
         change: -3.96,
         cap: 16828.42,

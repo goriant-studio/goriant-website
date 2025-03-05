@@ -31,7 +31,7 @@ const Banner = () => {
                                     {t('banner.playNow')}
                                 </button>
                                 <button className='bg-transparent flex justify-center items-center text-white hover:text-gray-200 transition-colors duration-300' onClick={() => setOpen(true)}>
-                                    <Image src={getAssetPath('/images/Banner/playbutton.svg')} alt="watch-gameplay" className='mr-3' width={47} height={47} />
+                                    <Image src={getAssetPath('/images/banner/playbutton.svg')} alt="watch-gameplay" className='mr-3' width={47} height={47} />
                                     {t('banner.watchGameplay')}
                                 </button>
                             </div>

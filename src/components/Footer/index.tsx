@@ -23,10 +23,10 @@ const products: ProductType[] = [
 ]
 
 const socialLinks: Social[] = [
-  { imgsrc: '/images/Footer/insta.svg', href: "https://instagram.com/" },
-  { imgsrc: '/images/Footer/dribble.svg', href: "https://dribble.com/" },
-  { imgsrc: '/images/Footer/twitter.svg', href: "https://twitter.com/" },
-  { imgsrc: '/images/Footer/youtube.svg', href: "https://youtube.com/" },
+  { imgsrc: '/images/footer/insta.svg', href: "https://instagram.com/" },
+  { imgsrc: '/images/footer/dribble.svg', href: "https://dribble.com/" },
+  { imgsrc: '/images/footer/twitter.svg', href: "https://twitter.com/" },
+  { imgsrc: '/images/footer/youtube.svg', href: "https://youtube.com/" },
 ]
 
 
@@ -42,7 +42,7 @@ const footer = () => {
           <div className='col-span-6'>
             <img
               className="block h-12 w-20px mb-4"
-              src={getAssetPath('/images/Logo/logo.svg')}
+              src={getAssetPath('/images/logo/logo.svg')}
               alt="Crypto-Logo"
             />
             <h3 className='text-gray-300 text-sm font-normal leading-9 mb-4 lg:mb-16'> Cryptocurrency is a type of virtual currency that uses cryptography to secure transactions that are digitally recorded on a distributed ledger, such as a blockchain.</h3>
@@ -70,9 +70,9 @@ const footer = () => {
 
           <div className="col-span-4">
             <h3 className="text-white text-xl font-medium mb-9">Contact Us</h3>
-            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/Footer/number.svg')} alt="number-icon" width={20} height={20} />(406) 555-012</h4>
-            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/Footer/email.svg')} alt="email-icon" width={20} height={20} />tim.jennings@example.com</h4>
-            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/Footer/address.svg')} alt="address-icon" width={20} height={20} />Elgin St. Celina, Delaware 10299</h4>
+            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/footer/number.svg')} alt="number-icon" width={20} height={20} />(406) 555-012</h4>
+            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/footer/email.svg')} alt="email-icon" width={20} height={20} />tim.jennings@example.com</h4>
+            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/footer/address.svg')} alt="address-icon" width={20} height={20} />Elgin St. Celina, Delaware 10299</h4>
           </div>
 
         </div>

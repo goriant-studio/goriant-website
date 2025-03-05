@@ -11,19 +11,19 @@ interface workdata {
 
 const workdata: workdata[] = [
     {
-        imgSrc: '/images/Work/icon-one.svg',
+        imgSrc: '/images/work/icon-one.svg',
         heading: 'Create Account',
         subheading: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry and this',
         hiddenpara: 'standard dummy text ever since the 1500s, when an unknownprinter took a galley of type and scrambled it to make a type specimen book. It has survived...',
     },
     {
-        imgSrc: '/images/Work/icon-two.svg',
+        imgSrc: '/images/work/icon-two.svg',
         heading: 'Find your Credit',
         subheading: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry and this',
         hiddenpara: 'standard dummy text ever since the 1500s, when an unknownprinter took a galley of type and scrambled it to make a type specimen book. It has survived...',
     },
     {
-        imgSrc: '/images/Work/icon-three.svg',
+        imgSrc: '/images/work/icon-three.svg',
         heading: 'Exchange Currency',
         subheading: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry and this',
         hiddenpara: 'standard dummy text ever since the 1500s, when an unknownprinter took a galley of type and scrambled it to make a type specimen book. It has survived...',
