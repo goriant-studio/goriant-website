@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
+  basePath: '',
+  assetPrefix: '',
   trailingSlash: true,
   // Cấu hình compiler để loại bỏ server-only code
   compiler: {
