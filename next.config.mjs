@@ -1,7 +1,6 @@
 import { PHASE_DEVELOPMENT_SERVER } from "next/constants.js";
 
 export default (phase) => {
-  const isDev = phase === PHASE_DEVELOPMENT_SERVER;
 
   /**
    * @type {import('next').NextConfig}
@@ -12,8 +11,7 @@ export default (phase) => {
     images: {
       unoptimized: true,
     },
-    basePath: "",
-    assetPrefix: isDev ? undefined : "https://goriant.com",
+    assetPrefix: "https://goriant.com",
     trailingSlash: true,
     // Cấu hình compiler để loại bỏ server-only code
     compiler: {
