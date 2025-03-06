@@ -31,11 +31,11 @@ const Navbar = () => {
                 <Link href="/" className="nav-link">
                   {t('nav.home')}
                 </Link>
-                <Link href="/exchange" className="nav-link">
-                  {t('nav.exchange')}
-                </Link>
                 <Link href="/features" className="nav-link">
                   {t('nav.features')}
+                </Link>
+                <Link href="/exchange" className="nav-link">
+                  {t('nav.games')}
                 </Link>
                 <Link href="/faq" className="nav-link">
                   {t('nav.faq')}
@@ -44,9 +44,9 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <button className="game-button">
+            {/* <button className="game-button">
               {t('nav.connectWallet')}
-            </button>
+            </button> */}
           </div>
           <div className="-mr-2 flex md:hidden">
             <button

@@ -4,9 +4,10 @@ const translations = {
     nav: {
       home: "Home",
       exchange: "Exchange",
-      features: "Features",
+      features: "Flappy Evolution Features",
       faq: "FAQ",
       connectWallet: "Connect Wallet",
+      games: "My Games",
     },
     banner: {
       title: "Flap & Evolve",
