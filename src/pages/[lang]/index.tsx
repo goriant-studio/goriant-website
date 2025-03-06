@@ -19,8 +19,6 @@ export default function Home() {
         <main className="pt-16">
           <Banner />
           <EvolutionSystem />
-          <Features />
-          <Work />
           <GamePartners />
           <Faq />
         </main>
