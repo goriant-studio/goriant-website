@@ -18,7 +18,7 @@ const products: ProductType[] = [
   {
     id: 1,
     section: "Quick Links",
-    link: ["🎮 My Games", "🛠 Development Blog", "📜 About Me", "❓ FAQ"],
+    link: ["🎮 My Games", "🛠 Development Blog", "📜 About Me", "❓ FAQ", "🔒 Privacy Policy"],
   },
 ];
 
@@ -49,7 +49,7 @@ const footer = () => {
               passion and a mind bursting with creativity, I bring stories to
               life through my indie game creations. From enchanting pixel
               landscapes to thrilling RPG adventures, every project is crafted
-              with love and dedication. Let’s build something magical together!
+              with love and dedication. Let's build something magical together!
             </h3>
 
             <div className="flex gap-4">
@@ -76,7 +76,7 @@ const footer = () => {
                 {product.link.map((link: string, index: number) => (
                   <li key={index} className="mb-5">
                     <Link
-                      href="/"
+                      href={link.includes("Privacy Policy") ? "/privacy-policy" : "/"}
                       className="text-gray-300 text-sm font-normal mb-6 hover:text-gray-100 transition-colors"
                     >
                       {link}
