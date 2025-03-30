@@ -41,11 +41,12 @@ const Navbar = () => {
                             <div className="flex flex-shrink-0 items-center">
                                 <Link href="/">
                                     <Image
-                                        src="/images/logo/logo.svg"
+                                        src="/images/logo/goriant_logo.png"
                                         alt="logo"
                                         width={157}
                                         height={30}
                                         className="w-auto h-auto"
+                                        
                                     />
                                 </Link>
                             </div>

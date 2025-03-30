@@ -5,10 +5,29 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+:root {
+  /* Primary Colors */
+  --primary-purple: #a600f4;
+  --primary-blue: #2c7cfc;
+  --primary-pink: #FF80AB;
+  --primary-green: #B9F6CA;
+  
+  /* Background Colors */
+  --bg-gradient-start: #1a1f2e;
+  --bg-gradient-end: #2a2f42;
+  --bg-card: rgba(255, 255, 255, 0.1);
+  --bg-card-hover: rgba(255, 255, 255, 0.15);
+  
+  /* Text Colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-accent: #B388FF;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #03050d;
+  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+  color: var(--text-primary);
   /* background-image: linear-gradient(90deg, #BD24DF 0%, #2D6ADE 97.15%); */
   background-image: linear-gradient(90deg, rgba(189, 36, 223, 0.5) 0%, rgba(45, 106, 222, 0.5) 97.15%);
   background-blend-mode: overlay;
@@ -33,7 +52,13 @@ html:not([data-scroll="0"]) .navbar {
 }
 
 .navbar {
-  @apply bg-transparent;
+  @apply fixed w-full z-50 transition-all duration-300;
+  background: rgba(26, 31, 46, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.navbar.scrolled {
+  background: rgba(26, 31, 46, 0.95);
 }
 
 .navbar-link {
@@ -409,11 +434,11 @@ th:last-child {
 
 @layer components {
   .nav-link {
-    @apply text-white hover:text-purple-300 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+    @apply px-3 py-2 text-sm font-medium text-white hover:text-purple-300 transition-colors;
   }
 
   .nav-link-active {
-    @apply text-white bg-gradient-to-r from-purple-600 to-blue-500;
+    @apply text-purple-300;
   }
 
   .nav-menu {
@@ -421,6 +446,115 @@ th:last-child {
   }
 
   .mobile-menu {
-    @apply text-white space-y-1;
+    @apply fixed inset-0 z-50;
+    background: rgba(26, 31, 46, 0.98);
   }
+}
+
+/* Navigation Styles */
+.nav-link {
+  @apply px-3 py-2 text-sm font-medium text-white hover:text-purple-300 transition-colors;
+}
+
+.nav-link-active {
+  @apply text-purple-300;
+}
+
+/* Button Styles */
+.game-button {
+  @apply px-6 py-2 rounded-full font-medium transition-all duration-300;
+  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-blue) 100%);
+  color: white;
+  border: none;
+}
+
+.game-button:hover {
+  @apply transform -translate-y-1 shadow-lg;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-purple) 100%);
+}
+
+/* Card Styles */
+.feature-card {
+  @apply p-6 rounded-xl transition-all duration-300;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--primary-purple);
+  transform: translateY(-4px);
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply font-bold;
+  background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* FAQ Styles */
+.faq-card {
+  @apply rounded-xl p-6 mb-4;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-card:hover {
+  background: var(--bg-card-hover);
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glass Effect */
+.glass-effect {
+  @apply backdrop-blur-md;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Section Backgrounds */
+.bg-image {
+  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+}
+
+.radial-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(179, 136, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Arrow Decorations */
+.arrowOne {
+  background: url('/images/banner/arrowOne.svg') no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 5%;
+  top: 20%;
+  opacity: 0.5;
+}
+
+.arrowTwo {
+  background: url('/images/banner/arrowTwo.svg') no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 5%;
+  bottom: 20%;
+  opacity: 0.5;
 }

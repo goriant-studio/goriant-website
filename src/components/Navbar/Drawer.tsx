@@ -35,7 +35,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                         <div className="flex flex-shrink-0 items-center">
                             <Link href="/">
                                 <Image
-                                    src="/images/logo/logo.svg"
+                                    src="/images/logo/banner_logo.png"
                                     alt="logo"
                                     width={157}
                                     height={30}

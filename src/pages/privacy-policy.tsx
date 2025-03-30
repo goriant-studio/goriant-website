@@ -5,19 +5,21 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Head>
-        <title>Privacy Policy</title>
-        <meta name="description" content="Privacy Policy for Fruit Memory Game" />
+        <title>Privacy Policy - Matching Pair: Cute Fruit Memory Game</title>
+        <meta name="description" content="Privacy Policy for Matching Pair - A delightful memory game featuring cute fruits for all ages" />
       </Head>
       <main className="min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-8 text-white">
+          <h1 className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
             Privacy Policy
           </h1>
+          
+          <p className="text-gray-400 mb-8">Last updated: 2025-03-24</p>
 
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4 text-purple-300">Introduction</h2>
             <p className="text-gray-300 leading-relaxed">
-              Welcome to Matching Pair – Memory Game with Cute Fruit ("we," "our," or "us"). 
+              Welcome to Matching Pair – A delightful memory game featuring cute fruits ("we," "our," or "us"). 
               We respect your privacy and are committed to protecting any personal information 
               you may provide while using our application ("App"). This Privacy Policy outlines 
               our practices regarding data collection, usage, and disclosure.
@@ -73,7 +75,7 @@ const PrivacyPolicy = () => {
               {' '}for more details.
             </p>
             <p className="text-gray-300 leading-relaxed mt-4">
-              This Privacy Policy applies to Fruit Memory Game distributed through the Google Play Store.
+              This Privacy Policy applies to Matching Pair: Cute Fruit Memory Game distributed through the Google Play Store.
             </p>
           </section>
 

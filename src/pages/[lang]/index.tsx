@@ -3,8 +3,6 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Banner from "@/components/Banner";
 import EvolutionSystem from "@/components/GameFeatures/EvolutionSystem";
 import GamePartners from "@/components/GamePartners";
-import Features from "@/components/Features";
-import Work from "@/components/Work";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";

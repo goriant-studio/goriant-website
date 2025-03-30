@@ -1,3 +1,6 @@
+"use client"
+import { useLanguage } from "@/contexts/LanguageContext";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/utils/constants";
@@ -29,28 +32,37 @@ const socialLinks: Social[] = [
   { imgsrc: "/images/footer/youtube.svg", href: "https://youtube.com/" },
 ];
 
-const footer = () => {
-  return (
-    <div className=" relative">
-      <div className="radial-bg hidden lg:block"></div>
-      <div className="mx-auto max-w-2xl mt-64 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
-          {/* COLUMN-1 */}
+const Footer = () => {
+  const { t } = useLanguage();
 
+  const quickLinks = [
+    { key: 'myGames', href: '/' },
+    { key: 'devBlog', href: '/' },
+    { key: 'aboutMe', href: '/' },
+    { key: 'faq', href: '/' },
+    { key: 'privacyPolicy', href: '/privacy-policy' },
+  ];
+
+  return (
+    <div className="relative bg-gradient-to-b from-[#041240] to-[#0a0a2e]">
+      <div className="radial-bg hidden lg:block"></div>
+      <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="mt-16 py-8 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+        
+          {/* COLUMN-1 */}
           <div className="col-span-6">
             <p className="text-white text-xl font-medium mb-9">
-              🎮 Indie Dev Portfolio
+              {t('footer.title')}
             </p>
 
-            <h3 className="text-gray-300 text-sm font-normal leading-9 mb-4 lg:mb-16">
-              I believe games are more than just code<p></p>
-            
-              They are worlds waiting to be explored. With a heart full of
-              passion and a mind bursting with creativity, I bring stories to
-              life through my indie game creations. From enchanting pixel
-              landscapes to thrilling RPG adventures, every project is crafted
-              with love and dedication. Let's build something magical together!
-            </h3>
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                {t('footer.philosophy.title')}
+              </h3>
+              <p className="text-gray-300 text-sm font-normal leading-7 mb-8">
+                {t('footer.philosophy.description')}
+              </p>
+            </div>
 
             <div className="flex gap-4">
               {socialLinks.map((items, i) => (
@@ -65,31 +77,28 @@ const footer = () => {
             </div>
           </div>
 
-          {/* CLOUMN-2/3 */}
+          {/* COLUMN-2 */}
+          <div className="group relative col-span-2">
+            <p className="text-white text-xl font-medium mb-9">
+              {t('footer.quickLinks.title')}
+            </p>
+            <ul>
+              {quickLinks.map((link, index) => (
+                <li key={index} className="mb-5">
+                  <Link
+                    href={link.href}
+                    className="text-gray-300 text-sm font-normal mb-6 hover:text-gray-100 transition-colors"
+                  >
+                    {t(`footer.quickLinks.${link.key}`)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          {products.map((product) => (
-            <div key={product.id} className="group relative col-span-2">
-              <p className="text-white text-xl font-medium mb-9">
-                {product.section}
-              </p>
-              <ul>
-                {product.link.map((link: string, index: number) => (
-                  <li key={index} className="mb-5">
-                    <Link
-                      href={link.includes("Privacy Policy") ? "/privacy-policy" : "/"}
-                      className="text-gray-300 text-sm font-normal mb-6 hover:text-gray-100 transition-colors"
-                    >
-                      {link}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-
+          {/* COLUMN-3 */}
           <div className="col-span-4">
-            <h3 className="text-white text-xl font-medium mb-9">Contact Us</h3>
-            {/* <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/footer/number.svg')} alt="number-icon" width={20} height={20} />(406) 555-012</h4> */}
+            <h3 className="text-white text-xl font-medium mb-9">{t('footer.contact.title')}</h3>
             <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors">
               <Image
                 src={getAssetPath("/images/footer/email.svg")}
@@ -97,30 +106,31 @@ const footer = () => {
                 width={20}
                 height={20}
               />
-              studio@goriant.com
+              {t('footer.contact.email')}
             </h4>
-            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors"><Image src={getAssetPath('/images/footer/address.svg')} alt="address-icon" width={20} height={20} />Ho Chi Minh city, D7, Việt Nam</h4>
+            <h4 className="text-gray-300 text-sm font-normal mb-6 flex gap-2 hover:text-gray-100 transition-colors">
+              <Image 
+                src={getAssetPath('/images/footer/address.svg')} 
+                alt="address-icon" 
+                width={20} 
+                height={20} 
+              />
+              {t('footer.contact.address')}
+            </h4>
           </div>
+
         </div>
       </div>
 
       {/* All Rights Reserved */}
-
       <div className="py-8 px-4 border-t border-gray-800">
         <h3 className="text-center text-gray-300">
-          @2025 - All Rights Reserved by{" "}
-          <Link
-            href="https://goriant.com/"
-            target="_blank"
-            className="hover:text-gray-100 transition-colors"
-          >
-            {" "}
-            Goriant.com
-          </Link>
+          {t('footer.copyright')}
         </h3>
       </div>
+
     </div>
   );
 };
 
-export default footer;
+export default Footer;

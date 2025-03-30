@@ -13,7 +13,7 @@ const Banner = () => {
         <div className='bg-image relative' id="home-section">
             <div className='arrowOne'></div>
             <div className='radial-banner hidden lg:block'></div>
-            <ModalVideo channel='youtube' isOpen={isOpen} videoId="1YyAzVmP9xQ" onClose={() => setOpen(false)} />
+            <ModalVideo channel='youtube' isOpen={isOpen} videoId="YOUR_VIDEO_ID" onClose={() => setOpen(false)} />
 
             <div className="mx-auto max-w-7xl pt-16 lg:pt-40 sm:pb-24 px-6">
                 <div className='height-work'>
@@ -23,22 +23,25 @@ const Banner = () => {
                             <h1 className="text-4xl lg:text-7xl font-bold mb-5 text-white md:4px md:text-start text-center">
                                 {t('banner.title')} <br /> {t('banner.subtitle')}
                             </h1>
-                            <p className='text-white md:text-lg font-normal mb-10 md:text-start text-center whitespace-pre-line'>
+                            <p className='text-white md:text-lg font-normal mb-10 md:text-start text-center'>
                                 {t('banner.description')}
                             </p>
                             <div className='flex align-middle justify-center md:justify-start'>
+                                
                                 <button className='game-button mr-4'>
                                     {t('banner.playNow')}
                                 </button>
+
                                 <button className='bg-transparent flex justify-center items-center text-white hover:text-gray-200 transition-colors duration-300' onClick={() => setOpen(true)}>
-                                    <Image src={getAssetPath('/images/banner/playbutton.svg')} alt="watch-gameplay" className='mr-3' width={47} height={47} />
-                                    {t('banner.watchGameplay')}
+                                    <Image src={getAssetPath('/images/banner/playbutton.svg')} alt="watch-gameplay" className='mr-3 animate-bounce' width={47} height={47} />
+                                    <span>{t('banner.watchGameplay')}</span>
                                 </button>
+                                
                             </div>
                         </div>
 
                         <div className='col-span-5 mt-10 lg:mt-0'>
-                            <Image src={getAssetPath('/images/banner/banner.png')} alt="banner-image" width={1000} height={805} />
+                            <Image src={getAssetPath('/images/banner/matching_pair_banner.png')} alt="game-preview" width={1000} height={805} className="rounded-lg shadow-xl" />
                         </div>
                     </div>
                 </div>
