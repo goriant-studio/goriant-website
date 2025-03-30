@@ -21,7 +21,8 @@ const Banner = () => {
                         <div className='arrowTwo'></div>
                         <div className='col-span-7'>
                             <h1 className="text-4xl lg:text-7xl font-bold mb-5 text-white md:4px md:text-start text-center">
-                                {t('banner.title')} <br /> {t('banner.subtitle')}
+                                <img src={getAssetPath('/images/banner/tasty_twins_v2.png')} alt="title" width={600} height={185} className='pr-20' />
+                                <br /> {t('banner.subtitle')}
                             </h1>
                             <p className='text-white md:text-lg font-normal mb-10 md:text-start text-center'>
                                 {t('banner.description')}
