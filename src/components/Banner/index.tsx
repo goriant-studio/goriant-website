@@ -41,7 +41,7 @@ const Banner = () => {
                         </div>
 
                         <div className='col-span-5 mt-10 lg:mt-0'>
-                            <Image src={getAssetPath('/images/banner/matching_pair_banner.png')} alt="game-preview" width={1000} height={805} className="rounded-lg shadow-xl" />
+                            <Image src={getAssetPath('/images/banner/matching_pair_banner_v1.png')} alt="game-preview" width={1000} height={805} className="rounded-lg shadow-xl" />
                         </div>
                     </div>
                 </div>
